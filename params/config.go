@@ -34,16 +34,26 @@ var (
 var (
 	// MainnetChainConfig is the chain parameters to run a node on the main Musicoin network.
 	MainnetChainConfig = &ChainConfig{
-		ChainId:        big.NewInt(7762959),
-		HomesteadBlock: big.NewInt(1150000),
-		UBIForkBlock:   big.NewInt(1200001),
+		ChainId:        big.NewInt(7762956),
+		HomesteadBlock: big.NewInt(23),
+		UBIForkBlock:   big.NewInt(23),
 		DAOForkBlock:   nil,
 		DAOForkSupport: false,
-		EIP150Block:    big.NewInt(2000000),
+		EIP150Block:    big.NewInt(42),
 		EIP150Hash:     common.HexToHash("0x"),
-		EIP155Block:    big.NewInt(2000000),
-		EIP158Block:    big.NewInt(2000000),
-		ByzantiumBlock: big.NewInt(2000000),
+		EIP155Block:    big.NewInt(42),
+		EIP158Block:    big.NewInt(42),
+		ByzantiumBlock: big.NewInt(42),
+//		ChainId:        big.NewInt(7762959),
+//		HomesteadBlock: big.NewInt(1150000),
+//		UBIForkBlock:   big.NewInt(1200001),
+//		DAOForkBlock:   nil,
+//		DAOForkSupport: false,
+//		EIP150Block:    big.NewInt(2000000),
+//		EIP150Hash:     common.HexToHash("0x"),
+//		EIP155Block:    big.NewInt(2000000),
+//		EIP158Block:    big.NewInt(2000000),
+//		ByzantiumBlock: big.NewInt(2000000),
 
 		Ethash: new(EthashConfig),
 	}
